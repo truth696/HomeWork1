@@ -1,20 +1,17 @@
 #include<stdio.h>
  
    int main(){
-   	float x = 0;
-	float y = 0;
-	float z = 0;
-    printf("Input 1st number: ");
-     scanf("%f" , &x);
-    printf("Input 2nd number: ");
-     scanf("%f" , &y);
-    printf("Input 3rd number: ");
-     scanf("%f" , &z);
-
-       float ttl = x + y + z;
-       float avg = ttl / 3;
-    printf("Total: %f \n" , ttl);
-    printf("Average: %f \n" , avg);
+   	int a=0;
+	int b=0;
+	int c=0;
+	float res=0;
+	pirntf("Input your tree numbers");
+	scanf("%i", &a);
+	scanf("%i", &b);
+	scanf("%i", &c);
+	res = (a+b+c) / 3;
+	printf("Total %i" , a+b+c);
+	printf("Average %f", res);
  return 0;
    }
 

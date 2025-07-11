@@ -1,19 +1,18 @@
 #include<stdio.h>
 
    int main(){
-    int x = 0;
-    int y = 0;
-   	 printf("Please input x :");
-  	 scanf("%d" , &x);
-   	 printf("Please input y:");
-	 scanf("%d" , &y);
-
- 	x = x ^ y;
-         y = x ^ y;
- 	  x = x ^ y;	
+	int a = 0;
+	int b = 0;
+   	printf("Please input x :");
+  	scanf("%d" , &a);
+   	printf("Please input y:");
+	scanf("%d" , &b);
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;	
 
    
-    printf("Your results is:\n  x = %i\n  y = %i \n" , x , y);
+    printf("Your results is:\n  x = %i\n  y = %i \n" , a ,b);
     return 0;
    
    

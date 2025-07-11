@@ -1,16 +1,9 @@
 #include<stdio.h>
 
-
-
-  int main(){
-        printf("Pls input lowercase letter \n");
-        char lt = '\0';
-        scanf("%c", &lt);
-        lt = lt - 32;
-// ('a' - 'A')
-        printf("%c" , lt);
-
-
-
-return 0;
-  }
+	int main(){
+	printf("input your less letter \n");
+	char my_char = '\0';
+	scanf ("%c", &my_char) ;
+	my _char = my_char - 32;
+	printf("%c", my_char);
+	return 0;}

@@ -1,12 +1,14 @@
 #include<stdio.h>
 
    int main(){
-     int x = 0;
+     int a = 0;
      printf("Pls input n:");
-     scanf("%d" , &x);  
+     scanf("%d" , &a);  
 
-     int res  = 34 & ~(1 << x);
-   printf("result: %d\n" , res);
+     int res  = 0;
+	int x = 1<< a;
+	res = 34 | x;
+	printf("result: %d\n" , res);
 
    return 0;
    

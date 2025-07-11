@@ -1,12 +1,12 @@
 #include<stdio.h>
 
   int main(){
-     int x = 0;
+     int a  = 0;
      printf("Pls input number:");
-     scanf("%d" , &x);
+     scanf("%d" , &a);
      int  res = 0 ;  
 
-      res = ~x +1 ;
+      res = ~a +1 ;
 
 
 

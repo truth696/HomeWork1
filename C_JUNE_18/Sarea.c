@@ -1,12 +1,20 @@
 #include<stdio.h>
-  int main(){
-    float x = 0;
-    float y = 0;
-    printf("Pls input length:  \n");
-    scanf("%f" , &x);
-    printf("Pls input width:  \n");
-    scanf("%f" , &y);
-    float res = x * y;
-    printf("Your resalt is:  %f" , res);
-return 0;
-  }
+
+	int main(){
+
+	printf("input your length \n");
+
+	int my_char = 0;
+
+	scanf ("%i", &my_char);
+
+	printf("input your width \n");
+
+	int sc_number = 0;
+
+	scanf ("%i", &sc_number);
+
+	printf("Your area %i", my_char *
+	sc_number);
+	return 0
+;}

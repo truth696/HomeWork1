@@ -3,11 +3,10 @@
 
         int main(){
 
-
-        char lt = '\n';
+      char a = '\n';
         printf("Input a character: \n");
-        scanf("%c" , &lt);
-        printf("ASCII Value is: %c = %d \n", lt ,lt );
+        scanf("%c" , &a);
+        printf("ASCII Value is: %i \n", a );
 
   return 0;
 

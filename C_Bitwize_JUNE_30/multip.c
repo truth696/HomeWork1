@@ -1,13 +1,12 @@
 #include<stdio.h> 
 
      int main(){
-       int x = 0;
-       printf("Pls input number :");
-       scanf("%d" , &x);
-
-
-       int res = x << 1;  
-     printf("result : %d" , res);
+       printf("Pls input number :")
+	int a = 0;
+	int res = 0;
+	scanf("%d" , &a);
+	res = a << 1;  
+        printf("result : %d" , res);
      return 0;
      
      

@@ -11,11 +11,7 @@ void fibo(int n){
         ++v;
     }
     printf("Your number: %d",i);
-    if( n < 1 ){
-        return 0;
-    }
-    else{
-        fibo(n-1) + fibo(n);
+    
 }
 int main(){
     int index = 0;

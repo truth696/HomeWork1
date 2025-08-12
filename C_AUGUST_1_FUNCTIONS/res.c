@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int reves( int num){
         int i = 0;
         int max = 10;
@@ -17,7 +16,8 @@ int reves( int num){
       }  
         
 int main(){
-             int  size = 10;
+    
+            int size = 10;
             int number[size];
             int i = 0;
             int b = 0;

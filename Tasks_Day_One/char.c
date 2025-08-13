@@ -3,7 +3,7 @@
 
 void find_number(char* arr){
     for (int i = 0;i < n;){
-        if(arr[i] >= 48 && arr[i] <= 58){
+        if(arr[i] >= '0' && arr[i] <= '9'){
             printf("%c ", arr[i]);
             ++i;
         }else{

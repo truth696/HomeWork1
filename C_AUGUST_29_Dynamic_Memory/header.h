@@ -1,2 +1,2 @@
-void* calloc_my(int* arr, int  size, int num);
-int* realloc_my(int* arr, int size);
+void *custom_calloc(size_t num, size_t size);
+void *custom_realloc(void *ptr, size_t new_size);

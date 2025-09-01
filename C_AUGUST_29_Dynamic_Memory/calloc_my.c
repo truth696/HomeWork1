@@ -1,6 +1,10 @@
 #include <string.h>
+#include <stdlib.h>
 
-void* calloc_my(int* arr, int  size, int num) {
+void *custom_calloc(size_t num, size_t size) {
+    
+    void* arr = malloc(size * sizeof(int));
+    
     memset(arr, num, size);
     
     return arr;

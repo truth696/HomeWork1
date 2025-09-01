@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "header.h"
+
 int main() {
     int n = 0; 
 
@@ -9,7 +10,8 @@ int main() {
     
     int* arr = malloc(n * sizeof(int));
     int num = 0;
-    calloc_my(arr, n, num);
+    
+    arr = custom_calloc(n, num);
 
     for (int i = 0;i < n; ++i) {
          printf("%d\n", arr[i]);

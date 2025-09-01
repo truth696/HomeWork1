@@ -1,14 +1,24 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
-void* realloc_my(int* arr, int n) {
-    
-    int * tmp =  malloc(sizeof(int)*n);
-    
-    memcpy (tmp,arr, n);
-    
-    free (arr);
-    
-    return tmp;
 
+void *custom_realloc(void *ptr, size_t new_size){ 
+
+    if (new_size == 0) {
+        free(ptr);
+        return NULL;
+    }
+    
+    if (ptr == NULL) {
+        return malloc(new_size);
+    }    
+
+    void* tmp = malloc(new_size);
+    if (tmp == 0) return NULL;
+    
+    memcpy(tmp,ptr,new_size);
+    
+    free(ptr);
+
+return tmp;
 } 

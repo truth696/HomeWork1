@@ -1,14 +1,26 @@
 #include <stdio.h>
 
-int polindrom (int number) {
-    int c = 0, tmp = 0, cpy = number ;
-    while (c != 1) {
-        while (number > 0) {
-            tmp += number % 10;
-            if (number > 9) tmp *=10;
-            number /=10;
-        }
+int numIsPolindrom(int number) {
+    int tmp = 0;
+
+    while (number > 0) {
+        tmp += number % 10;
+        
+        if (number > 9) tmp *=10;
+        number /=10;
+    }
+
+return tmp;
+}
+    
+    
+int polindrom(int number) {
+    int tmp = 0, cpy = number ;
+
+    while (tmp != cpy) {
+        tmp = polindrom_num (number);
         if (tmp == cpy) return tmp;
+        
         else {
             cpy += tmp;
             number = cpy;

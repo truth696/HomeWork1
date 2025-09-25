@@ -5,15 +5,11 @@ int maxProfit(int* prices, int pricesSize) {
     for (int i = 1;i < pricesSize; ++i) {
         if (min > prices[i]) {
             min = prices[i];
-            index = i;
+        } else if( prices[i] - min > max){
+            max = prices[i] - min;
         }
     }
-    int i = index;
-    for (; i < pricesSize; ++i) {
-        if (max < prices[i]){
-            max = prices[i];
-        }
-    }
+    
 
-return max - min;
+return max;
 }
